@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.ReservationController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="580.0" style="-fx-background-color: #D1A773;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="38.0" layoutX="41.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #ffffff;">
+               <image>
+                  <Image url="@../../../image/img_91665.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="95.0" layoutY="21.0" text="Book Now" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="prev" fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="6.0" onMouseClicked="#Prev" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/icons8-return-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="57.0" layoutY="250.0" text="CIN">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CINtxtfld" layoutX="57.0" layoutY="275.0" prefHeight="25.0" prefWidth="477.0" />
+      <TextField fx:id="prixAtxtfld" layoutX="57.0" layoutY="331.0" prefHeight="25.0" prefWidth="477.0" />
+      <Label layoutX="57.0" layoutY="306.0" text="Prix d'avance:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookBtn" layoutX="196.0" layoutY="387.0" mnemonicParsing="false" onAction="#book" prefWidth="200.0" style="-fx-background-color: #D1A773;" text="Submit" textFill="WHITE" />
+      <HBox alignment="CENTER_LEFT" layoutX="57.0" layoutY="170.0" prefHeight="43.0" prefWidth="247.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="100.0" prefWidth="77.0" text="Prix Total :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPriceLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="173.0" text="MAD 5000">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="58.0" layoutY="127.0" prefHeight="43.0" prefWidth="247.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="100.0" prefWidth="77.0" text="Voiture    :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="carNameLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="174.0" text="Car Name">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="305.0" layoutY="127.0" prefHeight="43.0" prefWidth="247.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="100.0" prefWidth="77.0" text="Pick-up :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pickupDlabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="173.0" text="2022-12-24">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="306.0" layoutY="170.0" prefHeight="43.0" prefWidth="247.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="100.0" prefWidth="77.0" text="Return  :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="returnDlabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="173.0" text="2022-12-30">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="210.0" layoutY="203.0" prefHeight="50.0" prefWidth="172.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="70.0" text="Matricule:" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="matriculeLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="98.0" text="D12365">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

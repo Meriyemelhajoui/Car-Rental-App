@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.FactureController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="580.0" style="-fx-background-color: #D1A773;">
+         <children>
+            <Label layoutX="241.0" layoutY="19.0" prefHeight="43.0" prefWidth="98.0" text="Facture" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="411.0" prefHeight="43.0" prefWidth="234.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="43.0" prefWidth="85.0" text="Marque     :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="marqueLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="117.0" text="Car Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcf6ff" height="80.0" layoutX="47.0" layoutY="206.0" opacity="0.54" stroke="#bcf6ff" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="162.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="52.0" layoutY="211.0" prefHeight="43.0" prefWidth="172.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="100.0" prefWidth="77.0" text="Pick-up :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pickupDlabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="101.0" text="2022-12-24">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="52.0" layoutY="240.0" prefHeight="43.0" prefWidth="162.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="100.0" prefWidth="77.0" text="Return  :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="returnDlabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="91.0" text="2022-12-30">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="383.0" prefHeight="50.0" prefWidth="228.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="85.0" text="Matricule  :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="matriculeLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="104.0" text="D12365">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="37.0" fitWidth="38.0" layoutX="36.0" layoutY="81.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/2298977.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="96.0" prefHeight="23.0" prefWidth="59.0" text="Rentify">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="120.0" text="Al hoceima" />
+      <Label layoutX="54.0" layoutY="159.0" text="+212500000000" />
+      <Label layoutX="55.0" layoutY="140.0" text="Morocco" />
+      <HBox alignment="CENTER_LEFT" layoutX="376.0" layoutY="208.0" prefHeight="50.0" prefWidth="172.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="70.0" text="CIN:" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="CINlabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="98.0" text="D12365">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="clientNameLabel" layoutX="400.0" layoutY="193.0" text="Client name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="376.0" layoutY="237.0" prefHeight="50.0" prefWidth="172.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="70.0" text="Ville:" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="matriculeLabel11" contentDisplay="CENTER" prefHeight="43.0" prefWidth="98.0" text="Al-hoceima">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="316.0" layoutY="329.0" text="Reservation Informations:" textFill="#d1a773">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="438.0" prefHeight="43.0" prefWidth="228.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="43.0" prefWidth="84.0" text="Modele     :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ModeleLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="116.0" text="Car Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="37.0" layoutY="329.0" text="Car Informations:" textFill="#d1a773">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="314.0" layoutY="409.0" prefHeight="43.0" prefWidth="247.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="43.0" prefWidth="111.0" text="Prix Avance :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="prixALabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="117.0" text="Car Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="314.0" layoutY="381.0" prefHeight="50.0" prefWidth="265.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="110.0" text="Prix Total  :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="prixTLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="98.0" text="D12365">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="314.0" layoutY="436.0" prefHeight="43.0" prefWidth="247.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="43.0" prefWidth="110.0" text="Prix Restant :" textFill="#d1a773">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="prixRLabel" contentDisplay="CENTER" prefHeight="43.0" prefWidth="116.0" text="Car Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Separator layoutX="273.0" layoutY="369.0" orientation="VERTICAL" prefHeight="92.0" prefWidth="0.0" style="-fx-background-color: #000000;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Separator>
+      <Button fx:id="backHomebtn" layoutX="171.0" layoutY="534.0" mnemonicParsing="false" onAction="#backHomePage" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #D1A773;" text="Get Back To home page" textFill="WHITE" />
+      <Label layoutX="45.0" layoutY="592.0" text="Add Your Feedback:(Optional)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="feedbackBtn" layoutX="433.0" layoutY="623.0" mnemonicParsing="false" onAction="#addFeedback" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #D1A773;" text="Add" textFill="WHITE" />
+      <TextArea fx:id="feedbackLabel" layoutX="45.0" layoutY="614.0" prefHeight="59.0" prefWidth="375.0" />
+      <Label layoutX="99.0" layoutY="678.0" prefHeight="17.0" prefWidth="360.0" text="\@Copyright reserved To Omayma Azeroual &amp; Meriyem EL Hajoui " textFill="#8d8181" />
+      <ImageView fitHeight="37.0" fitWidth="38.0" layoutX="24.0" layoutY="12.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/2298977.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="27.0" text="Rentify">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

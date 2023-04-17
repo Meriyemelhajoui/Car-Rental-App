@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.LoginForm">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="267.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/shutterstock_49799970712.jpg" />
+               </image>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="14.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/instagram.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="298.0" text="\@Rentify" />
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="8.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/Facebook-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="323.0" text="\@Rentify" />
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="14.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/whatsapp-logo-1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="348.0" text="+212500000000" />
+            <ImageView fitHeight="103.0" fitWidth="87.0" layoutX="32.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/2298977.png" />
+               </image>
+            </ImageView>
+            <Label cache="true" layoutX="64.0" layoutY="113.0" prefHeight="87.0" prefWidth="156.0" text="Rentify">
+               <font>
+                  <Font name="Monospaced Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="134.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/img_109099.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="151.0" text="Username:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUser" layoutX="98.0" layoutY="148.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
+            <Label layoutX="21.0" layoutY="192.0" text="Password:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPass" layoutX="99.0" layoutY="190.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="21.0" layoutY="271.0" mnemonicParsing="false" onAction="#isSign" prefHeight="36.0" prefWidth="252.0" style="-fx-background-color: #D1A773;" text="Login" textFill="WHITE" />
+            <Label fx:id="invalid" layoutX="30.0" layoutY="237.0" prefHeight="20.0" prefWidth="236.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="regist" layoutX="87.0" layoutY="314.0" onMouseClicked="#gotToSignUp" text="Create New Account?" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
